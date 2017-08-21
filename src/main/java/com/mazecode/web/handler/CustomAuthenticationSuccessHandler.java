@@ -21,9 +21,7 @@ public class CustomAuthenticationSuccessHandler implements AuthenticationSuccess
 	UserService userService;
 	
 	@Override
-	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response,
-										Authentication authentication) throws IOException, ServletException {
-		
+	public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException, ServletException {
 		User loginUser = (User) authentication.getPrincipal();
 		
 		Users user = userService.getUser(loginUser.getUsername());
@@ -33,5 +31,4 @@ public class CustomAuthenticationSuccessHandler implements AuthenticationSuccess
 		
 		response.sendRedirect("home");
 	}
-	
 }

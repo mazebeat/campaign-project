@@ -1,15 +1,30 @@
+# Generic
+*~
+*.iml
+*.idea
+*.settings
+dist
+/.sass-cache
+
+# JAVASCRIPT
+## Node
 node_modules
+src/main/webapp/resources/dist/bundle.js
+src/main/webapp/resources/js/bundle.js
+
+# PHP
 public/hot
 public/storage
+
+## Laravel
 storage/*.key
 vendor
-.idea
 .vagrant
 Homestead.json
 Homestead.yaml
 npm-debug.log
 .env
+
+# JAVA
 src/test/
 target/
-.settings
-campaing-project.iml

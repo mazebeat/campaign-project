@@ -7,9 +7,6 @@ import com.mazecode.model.Users;
 
 import java.util.List;
 
-/**
- * @author mazecode
- */
 public interface UserService {
 	
 	List<Users> all();
