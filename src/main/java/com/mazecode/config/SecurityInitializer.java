@@ -1,5 +1,6 @@
 package com.mazecode.config;
 
-public class SecurityInitializer {
-//	public class SecurityInitializer extends AbstractSecurityWebApplicationInitializer {
+import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
+
+public class SecurityInitializer extends AbstractSecurityWebApplicationInitializer {
 }

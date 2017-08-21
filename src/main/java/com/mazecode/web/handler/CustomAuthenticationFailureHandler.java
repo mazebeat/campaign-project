@@ -22,16 +22,13 @@ public class CustomAuthenticationFailureHandler extends SimpleUrlAuthenticationF
 	private UserService userService;
 	
 	@Override
-	public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response,
-										AuthenticationException exception) throws IOException, ServletException {
-		
+	public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException exception) throws IOException, ServletException {
 		setDefaultFailureUrl(DEFAULT_FAILURE_URL);
 		super.onAuthenticationFailure(request, response, exception);
 		
 		if (exception instanceof BadCredentialsException) {
 			lockUser(request.getParameter("username"));
 		}
-		
 	}
 	
 	private void lockUser(String username) {
@@ -48,5 +45,4 @@ public class CustomAuthenticationFailureHandler extends SimpleUrlAuthenticationF
 			userService.saveUser(user);
 		}
 	}
-	
 }

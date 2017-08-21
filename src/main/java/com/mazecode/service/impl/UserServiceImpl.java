@@ -1,9 +1,10 @@
-package com.mazecode.service;
+package com.mazecode.service.impl;
 
 
 import com.mazecode.dao.UserDao;
 import com.mazecode.model.Roles;
 import com.mazecode.model.Users;
+import com.mazecode.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -24,7 +25,6 @@ import java.util.List;
 @Service("userService")
 @Transactional(readOnly = true)
 public class UserServiceImpl implements UserService, UserDetailsService {
-	
 	
 	@Autowired
 	UserDao userDao;
