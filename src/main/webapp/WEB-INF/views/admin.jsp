@@ -8,7 +8,7 @@
 <spring:url value="/resources/css" var="css"/>
 <spring:url value="/resources/js" var="js"/>
 <spring:url value="/resources/fonts" var="fonts"/>
-<spring:url value="/resources/${bower}" var="bower"/>
+<spring:url value="/bower_components" var="bower"/>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +21,7 @@
     <meta name="author" content="Łukasz Holeczek">
     <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,AngularJS,Angular,Angular2,Angular 2,Angular4,Angular 4,jQuery,CSS,HTML,RWD,Dashboard,React,React.js,Vue,Vue.js">
     <link rel="shortcut icon" href="img/favicon.png">
-    <title>CoreUI - Open Source Bootstrap Admin Template</title>
+    <title>Reca</title>
 
     <!-- Icons -->
     <link href="${css}/font-awesome.min.css" rel="stylesheet">
@@ -217,7 +217,7 @@
 
         <div class="container-fluid">
             <div class="animated fadeIn">
-                <h1>Admin Page</h1>
+                <h1>Admins Page</h1>
                 <h2>${message}</h2>
 
                 <a href='<c:url value="/home" />'>Home Page</a>

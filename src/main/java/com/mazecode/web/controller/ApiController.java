@@ -18,7 +18,7 @@ public class ApiController {
 	@Autowired
 	private UserService userService;
 	
-	@GetMapping("/user/all")
+//	@GetMapping("/user/all")
 	public List all() {
 		return userService.all();
 	}

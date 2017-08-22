@@ -27,13 +27,7 @@
 
     <!-- Main styles for this application -->
     <link href="${css}/style.css" rel="stylesheet">
-
-    <script>
-        window.config = {basename: '/'};
-    </script>
 </head>
-<body>
-
 <body class="app flex-row align-items-center">
 <div class="container">
     <div class="row justify-content-center">
@@ -94,6 +88,5 @@
 <script src="${bower}/jquery/dist/jquery.min.js"></script>
 <script src="${bower}/tether/dist/js/tether.min.js"></script>
 <script src="${bower}/bootstrap/dist/js/bootstrap.min.js"></script>
-
 </body>
 </html>

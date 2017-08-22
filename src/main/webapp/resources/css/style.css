@@ -11,6 +11,10 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+body {
+  background-color: #0e6498;
+}
+
 @media print {
   *,
   *::before,

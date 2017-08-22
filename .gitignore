@@ -1,16 +1,17 @@
 # Generic
 *~
-/*.iml
-/*.idea
+*.iml
+*.idea
 *.settings
 dist
-/.sass-cache
+.sass-cache
 
 # JAVASCRIPT
 ## Node
 node_modules
 src/main/webapp/resources/dist/bundle.js
 src/main/webapp/resources/js/bundle.js
+src/main/webapp/bower_components/
 
 # PHP
 /public/hot
@@ -26,6 +27,7 @@ npm-debug.log
 .env
 
 # JAVA
-/src/test/
-/target/
-/spring-security-mvc.iml
+bin
+src/test/
+target/
+spring-security-mvc.iml
