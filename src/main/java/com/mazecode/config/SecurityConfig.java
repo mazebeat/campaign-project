@@ -28,16 +28,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 //		http.csrf().disable();
+		http.authorizeRequests().anyRequest().permitAll();
+		http.authorizeRequests().antMatchers("/css/**", "/js/**", "/image/**", "/resources/**").permitAll();
 		http.authorizeRequests().antMatchers("/login").permitAll();
 		http.authorizeRequests().antMatchers("/api/**").permitAll();
 		http.authorizeRequests().antMatchers("/admin**").permitAll(); //.hasAnyRole("ADMIN");
-		http.authorizeRequests().anyRequest().hasAnyRole("USER");
-		http.formLogin().loginPage("/login")
-				.successHandler(customAuthenticationSuccessHandler)
-				.failureHandler(customAuthenticationFailureHandler);
+		http.formLogin().loginPage("/login").successHandler(customAuthenticationSuccessHandler).failureHandler(customAuthenticationFailureHandler);
 		http.logout().logoutUrl("/logout").logoutSuccessUrl("/login?logout-success").deleteCookies("mazecode-cookie");
-		
-		http.authorizeRequests().antMatchers("/css/**", "/js/**", "/image/**", "/resources/**").permitAll();
+
 //		http.httpBasic().realmName("MAZECODE-APP");
 	}
 	
