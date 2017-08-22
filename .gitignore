@@ -1,7 +1,7 @@
 # Generic
 *~
-*.iml
-*.idea
+/*.iml
+/*.idea
 *.settings
 dist
 /.sass-cache
@@ -13,12 +13,12 @@ src/main/webapp/resources/dist/bundle.js
 src/main/webapp/resources/js/bundle.js
 
 # PHP
-public/hot
-public/storage
+/public/hot
+/public/storage
 
 ## Laravel
 storage/*.key
-vendor
+/vendor
 .vagrant
 Homestead.json
 Homestead.yaml
@@ -26,5 +26,6 @@ npm-debug.log
 .env
 
 # JAVA
-src/test/
-target/
+/src/test/
+/target/
+/spring-security-mvc.iml
