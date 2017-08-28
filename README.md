@@ -8,15 +8,13 @@
 $ git clone https://github.com/mazebeat/mercenaries-reca.git
 ```
 
-**1** Change database driver (by default set for MySQL) and connections parameters (url, user and password) in `src/main/resources/app.properties`
+**1** Change database driver (by default set for MySQL) and connections parameters (url, user and password) in `src/main/resources/application.properties`
 
 **2** Change `jwt` secret key in `src/main/resources/application.properties` too (not nessasary)
 
 **3** Create schema. After run application table will be created in auto mode. Follow example for MySQL
 
-```sql
-CREATE SCHEMA `mercenary-project` DEFAULT CHARACTER SET utf8 ;
-```
+Execute the script `/src/sql/buildTestData.sql` to create schema and tables.
 
 **4** Install and build frontend dependencies 
 
