@@ -46,6 +46,9 @@ INSERT INTO authorities VALUES ('admin', 2);
 */
 
 /**  MYSQL */
+CREATE SCHEMA `mercenary-project` DEFAULT CHARACTER SET utf8 ;
+USE `mercenary-project`;
+
 CREATE TABLE `users` (
   `username` varchar(100) NOT NULL,
   `password` varchar(100) NOT NULL,
@@ -56,13 +59,11 @@ CREATE TABLE `users` (
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-
 CREATE TABLE `roles` (
   `id` int(11) NOT NULL,
   `name` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
 
 CREATE TABLE `authorities` (
   `user` varchar(100) NOT NULL,
