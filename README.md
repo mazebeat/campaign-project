@@ -5,7 +5,7 @@
 **0** Clone repository!
 
 ```shell
-$ git clone https://github.com/mazebeat/mercenaries-reca.git
+$ git clone https://github.com/mazebeat/mercenaries-dashboard.git
 ```
 
 **1** Change database driver (by default set for MySQL) and connections parameters (url, user and password) in `src/main/resources/application.properties`
